@@ -1,16 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     final imageUrl = "https://avatars.githubusercontent.com/u/72430097?v=4";
+
+
     return Drawer(
+
       child: Container(
+
         color: Colors.deepPurple,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
@@ -22,6 +29,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+
             ListTile(
               leading: Icon(
                 CupertinoIcons.home,
@@ -35,6 +43,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+
             ListTile(
               leading: Icon(
                 CupertinoIcons.profile_circled,
@@ -48,6 +57,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+
             ListTile(
               leading: Icon(
                 CupertinoIcons.mail,
@@ -60,10 +70,12 @@ class MyDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-            )
+            ),
+            
           ],
         ),
       ),
+
     );
   }
 }

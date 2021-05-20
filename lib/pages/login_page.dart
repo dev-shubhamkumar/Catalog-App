@@ -27,11 +27,14 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Material(
+
       color: Colors.white,
       child: SingleChildScrollView(
+
         child: Form(
           key: _formKey,
           child: Column(
@@ -76,7 +79,6 @@ class _LoginPageState extends State<LoginPage> {
                         if (value.isEmpty) {
                           return "Username cannot be empty";
                         }
-
                         return null;
                       },
                       onChanged: (value) {
@@ -98,7 +100,6 @@ class _LoginPageState extends State<LoginPage> {
                         else if (value.length < 6) {
                           return "Password length should be atleast 6";
                         }
-
                         return null;
                       },
                     ),
@@ -137,9 +138,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
 
             ],
+            
           ),
         ),
+
       ),
+
     );
   }
 }
