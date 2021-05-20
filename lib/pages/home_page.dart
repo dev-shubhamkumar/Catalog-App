@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:catalog_app/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -15,6 +16,7 @@ class HomePage extends StatelessWidget {
           child: Text("It's a $days day app! and made by $name"),
         ),
       ),
+      drawer: MyDrawer(),
     );
   }
 }
